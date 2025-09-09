@@ -1,0 +1,261 @@
+Nested if else********************\
+
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+    Scanner kbd=new Scanner(System.in);
+    int n=kbd.nextInt();
+    if(n%2==0){
+        System.out.println("Even");
+        if(n>0){
+            System.out.println("Pos");
+        }
+        else{
+            System.out.println("Neg");
+        }
+        
+    }
+    else{ 
+        System.out.println("Odd"); 
+        if(n>0){
+            System.out.println("Pos");
+        }
+        else{
+            System.out.println("Neg");
+        }
+    }
+    }
+}
+
+
+Laddeer if else*****************
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+    Scanner kbd=new Scanner(System.in);
+    int n=kbd.nextInt();
+    if(n>0) System.out.print("Pos");
+    else if(n<0) System.out.print("Neg");
+    else System.out.print("Zero");
+        
+    
+    }
+}
+***************************************************_____________*********************************
+
+
+switch Statement*******************
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+    Scanner kbd=new Scanner(System.in);
+    int n=kbd.nextInt();
+    switch(n){
+        case 1:
+            System.out.println("Withdrawal");
+            break;
+        case 2:
+            System.out.println("Deposit");
+            break;
+        case 3:
+            System.out.println("Balance Check");
+            break;
+        default:
+        System.out.println("Please enter between 1-3");
+      }
+        
+    
+    }
+}
+
+***************************************************_____________*********************************
+
+
+EVEN/ODD WIHTOUT USING IF ELSE*************
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+    Scanner kbd=new Scanner(System.in);
+    int n=kbd.nextInt();
+    System.out.print((n%2==0)?("even"):("odd"));
+   
+    }
+}
+
+***************************************************_____________*********************************
+
+
+LOOPING QUESTIONS
+
+1-n*****************
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+    Scanner kbd=new Scanner(System.in);
+    int n=kbd.nextInt();
+    System.out.println("You Entered "+n);
+    for(int i=1;i<=n;i++)
+    System.out.println(i);
+   }
+}
+
+
+n-1***********************
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+    Scanner kbd=new Scanner(System.in);
+    int n=kbd.nextInt();
+    System.out.println("You Entered "+n);
+    for(int i=n;i>=1;i--)
+    System.out.print(i+" ");
+    }
+}
+
+***************************************************_____________*********************************
+
+A-Z**************************
+public class Main {
+    public static void main(String[] args) {
+    for(char i='A';i<='Z';i++)
+    System.out.print(i+" ");
+    }
+}
+__________________OR___________
+
+public class Main {
+    public static void main(String[] args) {
+    for(int i=65;i<=90;i++)
+    System.out.print((char)i+" ");
+    }
+}
+
+Z-A************************
+
+public class Main {
+    public static void main(String[] args) {
+    for(char i='Z';i>='A';i--)
+    System.out.print(i+" ");
+    }
+}
+
+***************************************************_____________*********************************
+
+
+Even in range*****************
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+    Scanner kbd=new Scanner(System.in);
+    int n=kbd.nextInt();
+    System.out.println("You Entered "+n);
+    for(int i=1;i<=n;i++){
+        if(i%2==0)
+        System.out.println(i);
+    }
+    
+   }
+}
+
+***************************************************_____________*********************************
+
+
+Table********************
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+    Scanner kbd=new Scanner(System.in);
+    int n=kbd.nextInt();
+    System.out.println("You Entered "+n);
+    for(int i=1;i<=10;i++){
+      System.out.println(i+"*"+n+"="+i*n);
+    }
+    }
+}
+
+***************************************************_____________*********************************
+
+
+COUNT OF THE DIGITS in given NUMBER**********
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+    Scanner kbd=new Scanner(System.in);
+    int n=kbd.nextInt();
+    int count=0;
+    while(n>0){
+        n/=10;
+        count++;
+    }
+    System.out.println(count);
+    }
+}
+
+***************************************************_____________*********************************
+
+
+
+N*N pattern*****************
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+    Scanner kbd=new Scanner(System.in);
+    int n=kbd.nextInt();
+    for(int i=1;i<=n;i++){
+        for(int j=1;j<=n;j++)
+             System.out.print(i+" ");  change j instead of i
+    
+    System.out.println();
+    }
+    }
+}
+
+***************************************************_____________*********************************
+
+
+LEFT TRIANGLE*************
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+    Scanner kbd=new Scanner(System.in);
+    int n=kbd.nextInt();
+    for(int i=1;i<=n;i++){
+        
+        for(int j=1;j<=i;j++)
+             System.out.print("*");
+    
+    System.out.println();
+    }
+    }
+}
+
+***************************************************_____________*********************************
+
+
+RIGHT TRIANGLE**********************
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+    Scanner kbd=new Scanner(System.in);
+    int n=kbd.nextInt();
+    for(int i=1;i<=n;i++){
+        
+        for(int j=1;j<=n-i;j++)
+             System.out.print(" ");
+        for(int j=1;j<=i;j++)
+             System.out.print("*");
+    
+    System.out.println();
+    }
+    }
+}
